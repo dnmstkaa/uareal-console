@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Billing - Uareal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="images/faviconuareal.png" rel="icon">
+</head>
+<body>
+
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+          <i class="bi bi-list toggle-sidebar-btn"></i>
+          <a href="billing.html" class="logo d-flex align-items-center">
+            <img src="images/uareal.webp" alt="">
+          </a> 
+        </div>
+    
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
+    
+              <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <span class=" d-none d-md-block ps-2" style="color: #000913; font-family: Poppins , sans-serif; font-weight: 600; font-size: 16px;">UserName -</span>
+                <span class="d-none d-md-block ps-2" style="color: #271ABF; font-family: Poppins , sans-serif; font-weight: 600; font-size: 16px; margin-right: 35px;">Administrator</span>
+                <img src="images/profil.webp" alt="Profile" class="profile-header">
+              </a>
+    
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <img src="images/Mask group 1.png" alt="">
+                  <h6 style="color: #000913; font-family: Poppins , sans-serif; font-weight: 500; font-size: 14px; margin-top: 15px;">Username</h6>
+                  <span style="color: #271ABF; font-family: Poppins , sans-serif; font-weight: 500; font-size: 14px;">Administrator</span>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center mt-2" href="users-profile.html">
+                    <img src="images/icon-editprofile.png" alt="" style="margin-right: 10px;">
+                    <span style="color: #000913; font-size: 14px; font-family: Poppins , sans-serif; font-weight: 500;">Edit Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img src="images/icon-logout.png" alt="" style="margin-right: 10px;">
+                    <span style="color: #E32929; font-size: 14px; font-family: Poppins , sans-serif; font-weight: 500;">Log Out</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+      <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-house-fill"></i>
+              <span style="font-size: 17px; font-family: Poppins , sans-serif; font-weight: 500;">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="billing.html">
+                <i class="bi bi-card-list"></i>
+              <span style="font-size: 17px; font-family: Poppins , sans-serif; font-weight: 500;">Billing</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-card-list"></i>
+              <span style="font-size: 17px; font-family: Poppins , sans-serif; font-weight: 500;">Dokumentasi</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <main id="main" class="main">
+        <section class="section dashboard">
+          <div class="row mt-3">
+            <div class="col-6 col-md-2">
+              <div class="card infox-card month-card">
+                  <div class="card-body1">
+                  <h5 style="color: #000913; margin: 0; font-family: Poppins , sans-serif; font-weight: 500; font-size: 16px;">Month</h5>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-6 col-md-2">
+              <div class="card infox-card year-card">
+                <div class="card-body1">
+                  <h5 style="color: #000913; margin: 0; font-family: Poppins , sans-serif; font-weight: 500; font-size: 16px;">Year</h5>
+                </div>
+              </div>
+            </div>
+    
+            <div class="d-flex align-items-center col-md-2">
+              <div class="card infox-card search-card">
+                <div class="card-body1">
+                  <img src="images/search.png" alt="">
+                </div>
+              </div>
+              <div class="card infox-card setting-card">
+                <div class="card-body1">
+                  <img src="images/setting.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+            <div class="row">
+                  <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card sales-card">
+                        <div class="card-body">
+                        <h5 style="color: #242331; padding: 20px 0 5px 0; font-size: 16 px; font-weight: 600; font-family: Poppins , sans-serif;">Liveness Usage</h5>
+                        <div class="d-flex align-items-center">
+                            <h6 style="color: #242331; font-size: 28px; font-family: Poppins , sans-serif; font-weight: 700;">30</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card revenue-card">
+                      <div class="card-body">
+                        <h5 style="color: #242331; padding: 20px 0 5px 0; font-size: 16px; font-weight: 600; font-family: Poppins , sans-serif;">Compare Usage</h5>
+                        <div class="d-flex align-items-center">
+                            <h6 style="color: #242331; font-size: 28px; font-family: Poppins , sans-serif; font-weight: 700;">0</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card customers-card">
+                      <div class="card-body">
+                        <h5 style="color: #F9F9F9; padding: 20px 0 5px 0; font-size: 16px; font-weight: 600; font-family: Poppins , sans-serif;">Liveness and Compare Usage</h5>
+                        <div class="d-flex align-items-center">
+                          <h6 style="color: #F9F9F9; font-size: 28px; font-family: Poppins , sans-serif; font-weight: 700;">457</h6>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+    
+              <h2 style="color: #242331; font-family: Poppins , sans-serif; font-weight: 500; font-size: 18px; margin-bottom: 19px;">Usage Graph</h2>
+                <div id="chart" style="background-color: #FFFFFF; padding: 20px 50px 20px 20px; border-radius: 10px;">
+          <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      
+          <script>
+              var options = {
+                series: [{
+                  name: 'series1',
+                  data: [{
+                      x: 1,
+                      y: 0
+                  }, {
+                      x: 2,
+                      y: 590
+                  }, {
+                      x: 3,
+                      y: 610
+                  }, {
+                      x: 4,
+                      y: 575
+                  }, {
+                      x: 5,
+                      y: 560
+                  }, {
+                      x: 6,
+                      y: 610
+                  }, {
+                      x: 7,
+                      y: 120
+                  }, {
+                      x: 8,
+                      y: 610
+                  }, {
+                      x: 9,
+                      y: 250
+                  }, {
+                      x: 10,
+                      y: 0
+                  }, {
+                      x: 11,
+                      y: 0
+                  }, {
+                      x: 12,
+                      y: 0
+                  }, {
+                      x: 13,
+                      y: 0
+                  }, {
+                      x: 14,
+                      y: 0
+                  }, {
+                      x: 15,
+                      y: 0
+                  }, {
+                      x: 16,
+                      y: 0
+                  }, {
+                      x: 17,
+                      y: 0
+                  }, {
+                      x: 18,
+                      y: 0
+                  }, {
+                      x: 19,
+                      y: 0
+                  }, {
+                      x: 20,
+                      y: 0
+                  }, {
+                      x: 21,
+                      y: 0
+                  }, {
+                      x: 22,
+                      y: 0
+                  }, {
+                      x: 23,
+                      y: 0
+                  }, {
+                      x: 24,
+                      y: 0
+                  }, {
+                      x: 25,
+                      y: 0
+                  }, {
+                      x: 26,
+                      y: 0
+                  }, {
+                      x: 27,
+                      y: 0
+                  }, {
+                      x: 28,
+                      y: 0
+                  }, {
+                      x: 29,
+                      y: 0
+                  }, {
+                      x: 30,
+                      y: 0
+                  }, {
+                      x: 31,
+                      y: 0
+                  }]
+                }, {
+                  name: 'series2',
+                  data: [{
+                      x: 1,
+                      y: 0
+                  }, {
+                      x: 2,
+                      y: 20
+                  }, {
+                      x: 3,
+                      y: 30
+                  }, {
+                      x: 4,
+                      y: 10
+                  }, {
+                      x: 5,
+                      y: 15
+                  }, {
+                      x: 6,
+                      y: 30
+                  }, {
+                      x: 7,
+                      y: 10
+                  }, {
+                      x: 8,
+                      y: 25
+                  }, {
+                      x: 9,
+                      y: 0
+                  }, {
+                      x: 10,
+                      y: 0
+                  }, {
+                      x: 11,
+                      y: 0
+                  }, {
+                      x: 12,
+                      y: 0
+                  }, {
+                      x: 13,
+                      y: 0
+                  }, {
+                      x: 14,
+                      y: 0
+                  }, {
+                      x: 15,
+                      y: 0
+                  }, {
+                      x: 16,
+                      y: 0
+                  }, {
+                      x: 17,
+                      y: 0
+                  }, {
+                      x: 18,
+                      y: 0
+                  }, {
+                      x: 19,
+                      y: 0
+                  }, {
+                      x: 20,
+                      y: 0
+                  }, {
+                      x: 21,
+                      y: 0
+                  }, {
+                      x: 22,
+                      y: 0
+                  }, {
+                      x: 23,
+                      y: 0
+                  }, {
+                      x: 24,
+                      y: 0
+                  }, {
+                      x: 25,
+                      y: 0
+                  }, {
+                      x: 26,
+                      y: 0
+                  }, {
+                      x: 27,
+                      y: 0
+                  }, {
+                      x: 28,
+                      y: 0
+                  }, {
+                      x: 29,
+                      y: 0
+                  }, {
+                      x: 30,
+                      y: 0
+                  }, {
+                      x: 31,
+                      y: 0
+                  }]
+                }],
+                chart: {
+                  height: 350,
+                  type: 'area',
+                },
+                legend: {
+                  show: false,
+                },
+                dataLabels: {
+                  enabled: false
+                },
+                stroke: {
+                  curve: 'smooth',
+                  colors:['#819CA7', '#819CA7']
+                },
+                xaxis: {
+                  type: 'string',
+                },
+                colors:['#A5B8C0', '#88DEE3']
+              };
+              var chart = new ApexCharts(document.querySelector("#chart"), options);
+              chart.render();
+            </script>
+            </div>
+        </section>
+    
+      </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+</body>
+<script src="assets/js/main.js"></script>
+</html>
